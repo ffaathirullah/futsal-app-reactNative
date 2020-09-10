@@ -9,7 +9,11 @@ const Tab = createBottomTabNavigator();
 
 const Router = ({}) => (
   <Stack.Navigator>
-    <Stack.Screen name="MainApp" component={MainApp} />
+    <Stack.Screen
+      name="MainApp"
+      component={MainApp}
+      options={{headerShown: false}}
+    />
   </Stack.Navigator>
 );
 
